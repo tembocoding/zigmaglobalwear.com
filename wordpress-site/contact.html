@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us - Zigma Global Wear</title>
+    <link rel="icon" type="image/png" href="zigma-logo.png">
+    <link rel="shortcut icon" type="image/png" href="zigma-logo.png">
+    <link rel="stylesheet" href="wp-content/themes/zigma-theme/style.css">
+</head>
+<body class="contact-page">
+
+<!-- Logo Header (Center) -->
+<div class="logo-header">
+    <div class="logo-container">
+        <a href="/" class="site-logo">
+            <img src="zigma-logo.png" alt="Zigma Global Wear" class="logo-image">
+        </a>
+    </div>
+</div>
+
+<!-- Simple Kids Wear Navigation (Becomes Sticky) -->
+<header class="simple-nav-header" id="simple-nav-header">
+    <div class="simple-nav-container">
+        <nav class="simple-navigation" id="simple-navigation">
+                        <ul class="simple-nav-menu" id="simple-nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <!-- Mobile Navigation Toggle -->
+            <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<main class="site-main" id="main">
+
+    <!-- Contact Page Header -->
+    <section class="contact-hero">
+        <div class="contact-hero-container">
+            <div class="contact-hero-content">
+                <h1>Get in Touch</h1>
+                <p>Ready to discuss your kids' clothing needs? We're here to help!</p>
+                
+                <!-- Contact Action Buttons -->
+                <div class="contact-quick-links">
+                    <a href="tel:07440268282" class="contact-btn phone-btn">
+                        📞 Call Us: 07440 268282
+                    </a>
+                    <a href="mailto:info@zigmaglobalwear.com" class="contact-btn email-btn">
+                        ✉️ Email Us
+                    </a>
+                </div>
+                
+                <!-- Contact Details Grid -->
+                <div class="contact-details-grid">
+                    <div class="contact-detail-item">
+                        <div class="contact-detail-icon">📍</div>
+                        <div class="contact-detail-content">
+                            <h3>Visit Our Store</h3>
+                            <p><strong>72 High Rd</strong><br>
+                            London N22 6HL<br>
+                            United Kingdom</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail-item">
+                        <div class="contact-detail-icon">🕒</div>
+                        <div class="contact-detail-content">
+                            <h3>Business Hours</h3>
+                            <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM<br>
+                            <strong>Saturday:</strong> 10:00 AM - 4:00 PM<br>
+                            <strong>Sunday:</strong> Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail-item">
+                        <div class="contact-detail-icon">✉️</div>
+                        <div class="contact-detail-content">
+                            <h3>Email Addresses</h3>
+                            <p><strong>General Inquiries:</strong><br>
+                            <a href="mailto:info@zigmaglobalwear.com">info@zigmaglobalwear.com</a><br>
+                            <strong>Sales:</strong><br>
+                            <a href="mailto:sales@zigmaglobalwear.com">sales@zigmaglobalwear.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail-item">
+                        <div class="contact-detail-icon">📞</div>
+                        <div class="contact-detail-content">
+                            <h3>Phone Support</h3>
+                            <p><strong>Main Line:</strong><br>
+                            <a href="tel:07440268282">07440 268282</a><br>
+                            <strong>Available:</strong> During business hours<br>
+                            Quick response guaranteed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-hero-image">
+                <img src="zigma-get-in-touch.png" alt="Get in Touch - Zigma Global Wear" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section" style="background: #f8f9fa;">
+        <div class="section-container">
+            <h2>Send Us a Message</h2>
+            <p class="text-center">Fill out the form below and we'll get back to you as soon as possible</p>
+            
+            <!-- Note: This is a demo form for local testing -->
+            <div class="form-message" style="background: #e7f3ff; color: #004085; border: 1px solid #b8daff; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center;">
+                <p><strong>Demo Mode:</strong> This form is for layout testing. In WordPress, it will be fully functional.</p>
+            </div>
+            
+            <form class="contact-form" method="post" action="#" onsubmit="return demoFormSubmit(event)">
+                <div class="form-group">
+                    <label for="contact_name">Name *</label>
+                    <input type="text" id="contact_name" name="contact_name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact_company">Company</label>
+                    <input type="text" id="contact_company" name="contact_company">
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact_email">Email *</label>
+                    <input type="email" id="contact_email" name="contact_email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact_phone">Phone</label>
+                    <input type="tel" id="contact_phone" name="contact_phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="inquiry_type">Inquiry Type</label>
+                    <select id="inquiry_type" name="inquiry_type">
+                        <option value="General">General Inquiry</option>
+                        <option value="Product Info">Product Information</option>
+                        <option value="Custom Order">Custom Order</option>
+                        <option value="Partnership">Partnership Opportunity</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact_message">Message *</label>
+                    <textarea id="contact_message" name="contact_message" required placeholder="Please tell us about your textile requirements..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Send Inquiry (Demo)</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Business Information Section -->
+    <section class="section">
+        <div class="section-container">
+            <h2>Business Information</h2>
+            
+            <div class="business-info-grid">
+                <div class="business-card">
+                    <h3>Company Registration</h3>
+                    <div class="content-container">
+                        <h3>UK Business Details Container</h3>
+                        <p>UK business registration details will be placed here</p>
+                    </div>
+                </div>
+                
+                <div class="business-card">
+                    <h3>VAT Information</h3>
+                    <div class="content-container">
+                        <h3>VAT Number Container</h3>
+                        <p>VAT number if applicable will be placed here</p>
+                    </div>
+                </div>
+                
+                <div class="business-card">
+                    <h3>Years in Business</h3>
+                    <div class="content-container">
+                        <h3>Experience Container</h3>
+                        <p>Years of experience content will be placed here</p>
+                    </div>
+                </div>
+                
+                <div class="business-card">
+                    <h3>Certifications & Memberships</h3>
+                    <div class="content-container">
+                        <h3>Industry Associations Container</h3>
+                        <p>Industry associations and certifications will be placed here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Map Section -->
+    <section class="section" style="background: #f8f9fa; padding-bottom: 0;">
+        <div class="section-container">
+            <h2>Find Us</h2>
+            <p class="text-center">Visit our location or get directions</p>
+            
+            <!-- Google Maps Container -->
+            <div class="map-container">
+                <div class="store-address-info">
+                    <h3>📍 Our Location</h3>
+                    <p class="address-text">
+                        <strong>72 High Rd</strong><br>
+                        London N22 6HL<br>
+                        United Kingdom
+                    </p>
+                </div>
+                
+                <!-- Embedded Google Map -->
+                <div class="google-map-embed">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.234567!2d-0.1068656!3d51.5922648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761bb6d1b5c7d3%3A0x8b8e8e8e8e8e8e8e!2s72%20High%20Rd%2C%20London%20N22%206HL%2C%20UK!5e0!3m2!1sen!2suk!4v1706789012345!5m2!1sen!2suk"
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 10px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Zigma Global Wear Location - 72 High Rd, London N22 6HL">
+                    </iframe>
+                </div>
+            </div>
+            
+            <div class="map-actions text-center mt-30" style="max-width: 1200px; margin: 30px auto; padding: 0 20px;">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=72+High+Rd,+London+N22+6HL,+UK" 
+                   target="_blank" 
+                   class="cta-button">
+                   🗺️ Get Directions
+                </a>
+                <a href="tel:07440268282" class="cta-button secondary">
+                   📞 Call Before Visiting
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Section -->
+    <section class="section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+        <div class="section-container text-center">
+            <h2 style="color: white;">Need Immediate Assistance?</h2>
+            <p style="font-size: 18px; margin-bottom: 30px;">Our textile specialists are ready to help</p>
+            
+            <div class="quick-contact-grid">
+                <div class="quick-contact-item">
+                    <h3>Call Us Now</h3>
+                    <p style="font-size: 24px; font-weight: bold;"><a href="tel:07440268282" style="color: white;">07440 268282</a></p>
+                    <p>Speak directly with our team</p>
+                </div>
+                
+                <div class="quick-contact-item">
+                    <h3>Email Response</h3>
+                    <p style="font-size: 18px; font-weight: bold;"><a href="mailto:info@zigmaglobalwear.com" style="color: white;">info@zigmaglobalwear.com</a></p>
+                    <p>We respond within 24 hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Zigma Global Wear</h3>
+                <p>Premium Kids' Clothing & Textiles Specialist</p>
+                <div class="footer-contact">
+                    <p><strong>Phone:</strong> <a href="tel:07440268282">07440 268282</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@zigmaglobalwear.com">info@zigmaglobalwear.com</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul class="footer-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-business">
+                <h4>Visit Our Store</h4>
+                <div class="business-details">
+                    <p><strong>72 High Rd</strong><br>
+                    London N22 6HL<br>
+                    United Kingdom</p>
+                    <p><em>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                    Saturday: 10:00 AM - 4:00 PM<br>
+                    Sunday: Closed</em></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Zigma Global Wear. All rights reserved.</p>
+            <p>Specializing in Kids' Clothing | <a href="contact.html">Contact Us</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="wp-content/themes/zigma-theme/js/sticky-header.js"></script>
+
+<script>
+// Demo form submission for local testing
+function demoFormSubmit(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById('contact_name').value;
+    const email = document.getElementById('contact_email').value;
+    const message = document.getElementById('contact_message').value;
+    
+    if (name && email && message) {
+        alert(`Demo Form Submitted!\n\nName: ${name}\nEmail: ${email}\nMessage: ${message.substring(0, 50)}...\n\nIn WordPress, this will send a real email.`);
+        
+        // Reset form
+        document.querySelector('.contact-form').reset();
+        
+        // Show success message
+        const formSection = document.querySelector('.contact-form').parentElement;
+        const successMessage = document.createElement('div');
+        successMessage.className = 'form-message';
+        successMessage.style.cssText = 'background: #d4edda; color: #155724; border: 1px solid #c3e6cb; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center; font-weight: bold;';
+        successMessage.innerHTML = '<p>✅ Demo submission successful! In WordPress, this will be a real email.</p>';
+        
+        formSection.insertBefore(successMessage, document.querySelector('.contact-form'));
+        
+        // Remove success message after 5 seconds
+        setTimeout(() => {
+            successMessage.remove();
+        }, 5000);
+    }
+    
+    return false;
+}
+</script>
+
+<style>
+/* Additional styles for contact page */
+.form-message {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.business-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.business-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.business-card h3 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.map-actions {
+    margin-top: 30px;
+}
+
+.cta-button.secondary {
+    background: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+    margin-left: 20px;
+}
+
+.cta-button.secondary:hover {
+    background: #3498db;
+    color: white;
+}
+
+.quick-contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.quick-contact-item {
+    padding: 20px;
+}
+
+.quick-contact-item h3 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.quick-contact-item a {
+    text-decoration: none;
+}
+
+.quick-contact-item a:hover {
+    text-decoration: underline;
+}
+
+.contact-card a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 10px;
+}
+
+.footer-menu a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.7);
+}
+
+@media (max-width: 768px) {
+    .business-info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .quick-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .cta-button.secondary {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    
+    .quick-contact-item p {
+        font-size: 16px !important;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+</style>
+
+</body>
+</html> 
